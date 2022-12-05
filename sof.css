@@ -1,0 +1,248 @@
+:root{
+    --pink: rgb(213, 86, 120);
+    --lightpink:#c97f77;
+    --brown: rgb(53, 23, 23);
+    --darkpink: #913d49;
+}
+
+*{
+    font-family: verdana, arial, helvetica, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    color:#111;
+}
+
+header{
+    position:fixed;
+    display:flex;
+    z-index:10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content:space-around;
+}
+header .logo{
+    position:fixed;
+    display:flex;
+    z-index:100;
+    padding: 0px;
+    margin-top:50px;
+}
+.logo .alogo img{
+    position: relative;
+    width:150px;
+    height:100px;
+}
+.titre{
+    font-weight: bold;
+    position: relative;
+    left:0;
+    font-size:1.5em;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #111;
+    padding:20px;
+}
+
+.titre span{
+    color: var(--pink);
+}
+
+header .navbar{
+    position: relative;
+    display:flex;
+}
+header ul{
+    padding-right:0;
+}
+.navbar a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    color: #111;
+    margin-left: 30px;
+}
+.navbar li {
+    list-style: none;
+}
+
+
+.navbar a:hover{
+    color: var(--pink);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--pink);
+    transition: all 0.4s;
+}
+
+
+header.sticky{
+    background:antiquewhite;
+    padding:30px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+}
+
+header.sticky .titre{
+    color:#000;
+    padding:0px;
+}
+
+header.sticky .navbar li a{
+    color:#000;
+    padding:0px;
+}
+header.sticky li a:hover{
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
+header.sticky .logo{
+    margin-top:10px;
+}
+body{
+    background-color:antiquewhite;
+
+}
+.sofetes{
+    padding-top:100px;
+    position:relative;
+    width:100%;
+    padding-left:0px;
+}
+.sofetes img{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    justify-items:center;
+    align-items:center;
+    margin-top:20px;
+    margin-left:70px;
+    width:500px;
+    height:400px;
+    border-radius:40px;
+}
+.sofetes .contenu .col {
+    position: relative;
+    width:50%;
+}
+.sofetes .contenu{
+    position: relative;
+    display:flex;
+}
+.sofetes .col .maps{
+    border-radius:50px;
+    padding-left:80px;
+    padding-top:20px;
+    width:600px;
+    height:400px;
+}
+h3{
+    padding-top:30px;
+    margin-bottom:20px;
+    color: var(--brown);
+    font-size: 2.3em;
+    text-transform: uppercase;
+}
+h3 span{
+    color: var(--darkpink);
+    font-size:2.5em;
+}
+.sofetes p{
+    font-size:1.2em;
+    color:var(--brown);
+    margin:20px;
+}
+
+.sofetes .col .info{
+    padding-top:50px;
+    padding-left:50px;
+}
+.sofetes .col .label{
+    position: relative;
+    padding:20px 0 0 0;
+    font-size:1em;
+    color: var(--darkpink);
+    text-decoration: dotted;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+
+.sofetes .col .cap{
+    padding-bottom:50px;
+}
+.sofetes .col .label1{
+    color:#c97f77;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.sofetes .col ul{
+    padding-left:40px;
+    text-decoration: none;
+    list-style: none;
+}
+.sofetes .col li{
+    font-size:medium;
+    padding-bottom:10px;
+}
+
+.galerie{
+    margin-top: 0px;
+}
+.galerie .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.galerie .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff ;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+
+}
+.galerie .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.galerie .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.galerie .text h3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.sofetes .col .rdv{
+    padding:0px;
+}
+.sofetes .col .rdv .bouton{
+    background-color: var(--lightpink);
+    color:#fff;
+    display: flex;
+    margin-top: 20px;
+    padding:20px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:1.3em;
+    border-radius:20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sofetes .col .rdv .bouton:hover{
+    letter-spacing:1.5px;
+    transition: all 1s;
+}
+

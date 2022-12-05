@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="serv.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/logo2.png">
+    <title>Everyone Like It Unique- Services</title> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" class="alogo"><img src="./image/logo2.png" alt="logo"/></a>
+        </div>
+            <a href="#" class="titre">Everyone like it<span> Unique</span></a>
+            <ul class="navbar">
+               <li><a href="accueil.html">Accueil</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Galleries</a></li>
+            </ul>
+        </header>
+    <section class="service" id="service">
+        <div class="contenu">
+            <h2> Bienvenue ! </h2>
+            <h3>Veuillez Sélectionner vos préférences </h3>
+        </div>
+        <div class="dropdowns">
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Salles des fêtes</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li>Salles des fêtes</li>
+                <li>Villas</li>
+                <li>Espaces ouverts</li>
+                <li>Espaces fermés</li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <div class="select">
+                <span class="selected">Hammamet</span>
+                <div class="caret"></div>
+            </div>
+            <ul class="menu">
+                <li class="active">Hammamet</li>
+            </ul>
+        </div>
+    </div>
+    <button class="input">
+        <a href="hammamet.html">Confirmer</a>
+    </button>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header=document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY>0);
+        });
+    </script>
+    <script type="text/javascript">
+        const dropdowns= document.querySelectorAll('.dropdown');
+
+
+        dropdowns.forEach(dropdown =>{
+            const select=dropdown.querySelector('.select');
+            const caret=dropdown.querySelector('.caret');
+            const menu=dropdown.querySelector('.menu');
+            const options=dropdown.querySelectorAll('.menu li');
+            const selected=dropdown.querySelector('.selected');
+
+        select.addEventListener('click',()=>{
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            menu.classList.toggle('menu-open');
+        });
+
+            options.forEach(option =>{
+                option.addEventListener('click',()=>{
+                    selected.innerHTML = option.innerHTML;
+                    select.classList.remove('select-clicked');
+                    caret.classList.remove('caret-rotate');
+                    menu.classList.remove('menu-open');
+                    options.forEach(option=>{
+                        option.classList.remove('active');
+                    });
+                    option.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+:root{
+    --pink: rgb(213, 86, 120);
+    --lightpink:#c97f77;
+    --brown: rgb(53, 23, 23);
+    --darkpink: #913d49;
+}
+
+*{
+    font-family: verdana, arial, helvetica, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    color:#111;
+}
+
+header{
+    position:fixed;
+    display:flex;
+    z-index:10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content:space-around;
+}
+header .logo{
+    position:fixed;
+    display:flex;
+    z-index:100;
+    padding: 0px;
+    margin-top:50px;
+}
+.logo .alogo img{
+    position: relative;
+    width:150px;
+    height:100px;
+}
+.titre{
+    font-weight: bold;
+    position: relative;
+    left:0;
+    font-size:1.5em;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #111;
+    padding:20px;
+}
+
+.titre span{
+    color: var(--pink);
+}
+
+header .navbar{
+    position: relative;
+    display:flex;
+}
+header ul{
+    padding-right:0;
+}
+.navbar a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    color: #111;
+    margin-left: 30px;
+}
+.navbar li {
+    list-style: none;
+}
+
+
+.navbar a:hover{
+    color: var(--pink);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--pink);
+    transition: all 0.4s;
+}
+
+
+header.sticky{
+    background:antiquewhite;
+    padding:30px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+}
+
+header.sticky .titre{
+    color:#000;
+    padding:0px;
+}
+
+header.sticky .navbar li a{
+    color:#000;
+    padding:0px;
+}
+header.sticky li a:hover{
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
+header.sticky .logo{
+    margin-top:10px;
+}
+
+.liste{
+    padding-top: 50px;
+    background-image: url(./bg/pinkroyal.jpg);
+}
+.liste .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.liste .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff ;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+
+}
+.liste .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.liste .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.liste .contenu .box .text{
+    text-align: center;
+    font-weight:300px ;
+    color: #111;
+}
+.liste .contenu .box .text h3{
+    font-weight: 400px ;
+    background-color: var(--lightpink);
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+p{
+    font-size: 1.3em ;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--darkpink);
+}
+h2{
+    margin-bottom:20px;
+    color: var(--brown);
+    font-size: 2.3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 span{
+    color: var(--darkpink);
+    font-size:2.5em;
+}
+
+
+#liste > div.contenu > div > div.text{
+    background-color:var(--pink);
+}

@@ -1,0 +1,211 @@
+:root{
+    --pink: rgb(213, 86, 120);
+    --lightpink:#c97f77;
+    --brown: rgb(53, 23, 23);
+    --darkpink: #913d49;
+}
+
+*{
+    font-family: verdana, arial, helvetica, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    color:#111;
+}
+
+header{
+    position:fixed;
+    display:flex;
+    z-index:10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content:space-around;
+}
+header .logo{
+    position:fixed;
+    display:flex;
+    z-index:100;
+    padding: 0px;
+    margin-top:50px;
+}
+.logo .alogo img{
+    position: relative;
+    width:150px;
+    height:100px;
+}
+.titre{
+    font-weight: bold;
+    position: relative;
+    left:0;
+    font-size:1.5em;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #111;
+    padding:20px;
+}
+
+.titre span{
+    color: var(--pink);
+}
+
+header .navbar{
+    position: relative;
+    display:flex;
+}
+header ul{
+    padding-right:0;
+}
+.navbar a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    color: #111;
+    margin-left: 30px;
+}
+.navbar li {
+    list-style: none;
+}
+
+
+.navbar a:hover{
+    color: var(--pink);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--pink);
+    transition: all 0.4s;
+}
+
+
+header.sticky{
+    background:antiquewhite;
+    padding:30px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+}
+
+header.sticky .titre{
+    color:#000;
+    padding:0px;
+}
+
+header.sticky .navbar li a{
+    color:#000;
+    padding:0px;
+}
+header.sticky li a:hover{
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
+header.sticky .logo{
+    margin-top:10px;
+}
+h3{
+
+    padding-top:100px;
+    margin-bottom:20px;
+    color: var(--brown);
+    font-weight: bold;
+    font-size: 2.3em;
+    text-align:center;
+    text-transform: uppercase;
+}
+h3 span{
+    color: var(--darkpink);
+    font-size:2.5em;
+}
+.paiement{
+    background: antiquewhite;
+    width:100%;
+    position:relative;
+    text-align:center;
+    padding:50px;
+}
+.abonner{
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+.paiement .form{
+    position:relative;
+    width:700px;
+    text-align:center;
+    background: rgb(248, 226, 197);
+    border-radius:15px;
+}
+.paiement .form-floating{
+    position:relative;
+    width:450px;
+    height:70px;
+    margin:25px;
+    margin-left:150px;
+}
+.paiement p{
+    font-size: 1.2em; 
+    font-weight:bold;
+    color:rgb(213, 86, 120);
+}
+
+.payer {
+    padding:20px; 
+    background: rgb(213, 86, 120);
+    color: #fff;
+    border:none;
+    border-radius:20px;
+    width:200px;
+    font-size:1.5em;
+    letter-spacing: 1.3px;
+    margin:20px;
+}
+.payer:hover{
+    background: rgb(211, 77, 113); 
+
+}
+.footer {
+    padding:20px;
+    background:var(--pink);
+}
+.footer .row{
+    display:flex;
+}
+.footer .column{
+    position: relative;
+    width:50%;
+}
+.footer .column h3{
+    color: rgb(245, 207, 233);
+    text-align:center;
+    font-size:2em;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.footer .column p{
+    position: relative;
+    padding-top:30px;
+    font-size:1.5em;
+    font-style:oblique;
+    text-align: center;
+    color: #fff;
+}
+.footer .column li{
+    list-style: none;
+    margin-bottom:10px;
+
+}
+.footer .column li a{
+    text-decoration:none;
+    text-align:center;
+    position:relative;
+    font-style:oblique;
+    font-size:1.3em;
+    color: #fff;
+    padding-left:320px;
+}
+.footer li a:hover{
+    letter-spacing:1px;
+}

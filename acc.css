@@ -1,0 +1,428 @@
+:root{
+    --pink: rgb(213, 86, 120);
+    --lightpink:#c97f77;
+    --brown: rgb(53, 23, 23);
+    --darkpink: #913d49;
+}
+
+*{
+    font-family: verdana, arial, helvetica, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    color:#111;
+}
+
+h2{
+    margin-bottom:20px;
+    color: var(--brown);
+    font-size: 2.3em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+h2 span{
+    color: var(--darkpink);
+    font-size:2.5em;
+}
+
+p{
+    color: #111;
+    font-size: 1.3em;
+}
+header{
+    position:fixed;
+    display:flex;
+    z-index:10;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content:space-around;
+}
+header .logo{
+    position:fixed;
+    display:flex;
+    z-index:100;
+    padding: 0px;
+    margin-top:50px;
+}
+.logo .alogo img{
+    position: relative;
+    width:150px;
+    height:100px;
+}
+.titre{
+    font-weight: bold;
+    position: relative;
+    left:0;
+    font-size:1.5em;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: #fff;
+    padding:20px;
+}
+
+.titre span{
+    color: var(--pink);
+}
+
+header .navbar{
+    position: relative;
+    display:flex;
+}
+header ul{
+    padding-right:0;
+}
+.navbar a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    margin-left: 30px;
+}
+.navbar li {
+    list-style: none;
+}
+
+
+.navbar a:hover{
+    color: var(--pink);
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-bottom: 2px solid var(--pink);
+    transition: all 0.4s;
+}
+
+
+.accueil{
+    padding:300px;
+    position:relative;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image/sf1.jpg);
+    background-size: cover;
+}
+
+.accueil .contenu {
+    z-index:1;
+    max-width: 70%;
+    text-align:center;
+}
+.accueil .contenu h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    color:var(--brown);
+}
+
+.accueil .contenu .btn1{
+    background-color: var(--darkpink);
+    color:#fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding:20px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:1.3em;
+    border-radius:20px;
+}
+.accueil .contenu .btn2{
+    background-color: var(--lightpink);
+    color:#fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding:20px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:1.3em;
+    border-radius:20px;
+}
+
+.accueil .contenu .btn1:hover {
+    letter-spacing:1.5px;
+    transition: all 1s;
+}
+.accueil .contenu .btn2:hover {
+    letter-spacing:1.5px;
+    transition: all 1s;
+}
+.apropos{
+    position:relative;
+    background-color:antiquewhite;
+    width:100%;
+}
+
+.apropos h2{
+    position: relative;
+    margin-bottom:20px;
+    color: var(--brown);
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.apropos .content {
+    position: relative;
+    display:flex;
+}
+
+.apropos .col {
+    position: relative;
+    width:50%;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.content .col img{
+    position:relative;
+    width:700px;
+    height:450px;
+    border: solid 5px var(--lightpink);
+}
+
+
+.apropos .content .col p{
+    position: relative;
+    margin:30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.apropos .content .col p:nth-child(6), .apropos .content .col p:nth-child(7){
+    color:var(--lightpink);
+    font-weight: bold;
+}
+
+header.sticky{
+    background:antiquewhite;
+    padding:30px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+}
+
+header.sticky .titre{
+    color:#000;
+    padding:0px;
+}
+
+header.sticky .navbar li a{
+    color:#000;
+    padding:0px;
+}
+header.sticky li a:hover{
+    color: var(--pink);
+    border-bottom: 2px solid var(--pink);
+}
+header.sticky .logo{
+    margin-top:10px;
+}
+
+.special{
+    position: relative;
+    background-color: antiquewhite;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.special .row{
+    position: relative;
+    display:flex;
+}
+.special h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.special .column{
+    position: relative;
+    width:50%;
+}
+.special .column p{
+    margin-bottom: 50px;
+    position: relative;
+    display:flex;
+    font-size:2em;
+    font-style:oblique;
+    font-weight: bold;
+    color: var(--pink);
+    justify-content:center;
+}
+.special .column li{
+    text-align:center;
+    margin:50px;
+    position: relative;
+    list-style-position: inside;
+    list-style-type:square;
+    font-size:1.3em;
+}
+
+.special .column li:nth-child(4){
+    font-weight: bold;
+    color: var(--lightpink);
+}
+.special .column li:hover{
+    transition:0.3s;
+    font-size:1.5em;
+}
+
+.special .column .img{
+    position:relative;
+    justify-content: flex-end;
+    padding-bottom: 20px;;
+}
+.special .column img{
+    width:700px;
+    height:450px;
+    border: solid 5px var(--lightpink);
+}
+
+
+.contact {
+    padding:20px 250px;
+    background-image: url(./bg/pinkroyal.jpg);
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center; 
+    width:100%;
+    height:100%;
+}
+
+
+.contact .texte{
+    margin-bottom:20px;
+    color: var(--brown);
+    font-size: 2.3em;
+    text-align: center;
+}
+.contact .texte span{
+    color: var(--darkpink);
+    font-size:2.5em;
+}
+
+
+.contact .form{
+    width:700px;
+    text-align: center;
+    position:relative;
+    border-radius: 50px;
+    background: url(./gif/pink1.gif) center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    border: solid 2px #ccc;
+}
+
+.contact .form .label{
+    padding:15px;
+    display:flex;
+    font-size:1.5em;
+}
+
+.contact .form input{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.contact .form .champs{
+    margin-left:15px;
+    width:80%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid #eee;
+    background-color: rgba(230, 230, 230, 0.416);
+    font-size: 1.1rem;
+    margin-bottom:22px;
+    transition:.3s;
+}
+.contact .form .champs:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.contact .form .champs:focus{
+    background-color:#fff;
+    border: 2px solid rgba(30,85,250,0.47);
+}
+
+
+.contact .form .textarea{
+    margin-left:15px;
+    height:150px;
+    resize:none;
+}
+
+.contact .form .bouton{
+    background-color: var(--lightpink);
+    color:#fff;
+    display: inline-block;
+    width:70%;
+    margin-bottom:15px;
+    justify-content:center;
+    align-items:center;
+    padding:20px 30px;
+    text-transform: uppercase;
+    font-size:1.3em;
+    border-radius:20px;
+    border:solid var(--darkpink);
+}
+.contact .form .bouton:hover{
+    background-color: var(--darkpink);
+    border:solid var(--lightpink);
+    cursor: pointer;
+}
+.footer {
+    padding:20px;
+    background:var(--pink);
+}
+.footer .row{
+    display:flex;
+}
+.footer .column{
+    position: relative;
+    width:50%;
+}
+.footer .column h3{
+    color: rgb(245, 207, 233);
+    text-align:center;
+    font-size:2em;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.footer .column p{
+    position: relative;
+    padding-top:30px;
+    font-size:1.5em;
+    font-style:oblique;
+    text-align: center;
+    color: #fff;
+}
+.footer .column li{
+    list-style: none;
+    margin-bottom:10px;
+
+}
+.footer .column li a{
+    text-decoration:none;
+    text-align:center;
+    position:relative;
+    font-style:oblique;
+    font-size:1.3em;
+    color: #fff;
+    padding-left:320px;
+}
+.footer li a:hover{
+    letter-spacing:1px;
+}
+
+@media  screen and (max-width:768px) {
+    #menu img{
+        width:40px;
+        height:40px;
+        background-color:transparent;
+        border:none;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hm.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/logo2.png">
+    <title>Salles des fêtes-Hammamet</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" class="alogo"><img src="./image/logo2.png" alt="logo"/></a>
+        </div>
+            <a href="#" class="titre">Everyone like it<span> Unique</span></a>
+            <ul class="navbar">
+               <li><a href="accueil.html">Accueil</a></li>
+               <li><a href="Service.html">Services</a></li>
+               <li><a href="#">Galleries</a></li>
+            </ul>
+        </header>
+    <section class="liste" id="liste">
+        <div class="titre">
+            <h2><span>H</span>ammamet</h2>
+            <p>la liste des salles des fêtes:</p> 
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./image/sofetes/sofetes.png" alt="">
+                </div>
+                <div class="text">
+                    <a href="Sofetes.html">Sofetes hammamet </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header=document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY>0);
+        });
+    </script>
+            
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acc.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/logo2.png">
+
+    <title>Everyone Like it Unique-Accueil</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <a href="#" class="alogo"><img src="./image/logo2.png" alt="logo"/></a>
+    </div>
+        <a href="#" class="titre">Everyone like it<span> Unique</span></a>
+        <ul class="navbar">
+           <li><a href="accueil.html">Accueil</a></li>
+           <li><a href="#apropos">A propos</a></li>
+           <li><a href="Service.html">Services</a></li>
+           <li><a href="#">Galleries</a></li>
+        </ul>
+    </header>
+    <section class="accueil" id="accueil">
+        <div class="contenu">
+            <h2>Bienvenue chez nous !</h2>
+            <a href="Service.html" class="btn1">Services</a>
+            <a href="#" class="btn2">Login Client</a>
+    </div>
+    </section>
+    <section class="apropos" id="apropos">
+        <h2 class="titre"><span>A </span>Propos de Nous </h2><br>
+        <div class="content">
+            <div class="col">
+                <p>Notre site présente une collection des espaces de fête pour célébrer votre occasion quelle qu'elle soit. </p>
+                <p>Nous offrons la simplicité et la facilité de recherche. </p>
+                <p>Nous proposons la possibilité de visiter les espaces de fête pendant que vous êtes chez vous.</p>
+                <br> <br>
+                <p>Faire un tour à votre place.</p>
+                <p>Restez unique !</p>
+            </div>
+            <div class="col">
+                <img src="./image/sf-villa1.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="special" id="special">
+        <h2><span>U</span>nique A Propos de Nous </h2><br>
+        <div class="row">
+            <div class="column">
+                <p>Nous offrons : </p>
+                <ul>
+                    <li>La facilité de recherche  </li>
+                    <li>L'accés simple et facile des espaces des fêtes</li>
+                    <li>Attention au votre budget</li>
+                    <li>Tous dans un même site</li>
+                </ul> 
+            </div>
+            <div class="column">
+                <div class="img">
+                    <img src="./image/sf-villa.jpg" alt="heart">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" id="footer">
+        <div class="row">
+        <div class="column">
+            <h3>Everyone Like It Unique </h3>
+            <p>Everyone Like It Unique est un espace où nous offrons la possibilité de réserver le meilleur espace pour des meilleurs prix et meilleurs offres.</p>
+        </div>
+        <div class="column">
+            <h3>Liens utiles </h3>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="#">Galleries</a></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header=document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY>0);
+        });
+    </script>
+</body>
+</html>
+
+
+
